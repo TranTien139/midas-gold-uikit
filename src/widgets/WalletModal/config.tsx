@@ -3,6 +3,8 @@ import MathWallet from "./icons/MathWallet";
 import TokenPocket from "./icons/TokenPocket";
 import TrustWallet from "./icons/TrustWallet";
 import WalletConnect from "./icons/WalletConnect";
+import MidasWallet from "./icons/midasWallet";
+import Coin98Wallet from "./icons/coin98Wallet";
 import BinanceChain from "./icons/BinanceChain";
 import { Config } from "./types";
 
@@ -10,6 +12,16 @@ const connectors: Config[] = [
   {
     title: "Metamask",
     icon: Metamask,
+    connectorId: "injected",
+  },
+  {
+    title: "MidasWallet",
+    icon: MidasWallet,
+    connectorId: "injected",
+  },
+  {
+    title: "Coin98Wallet",
+    icon: Coin98Wallet,
     connectorId: "injected",
   },
   {
