@@ -2427,6 +2427,11 @@ var connectors = [
         connectorId: "injected",
     },
     {
+        title: "MidasWallet",
+        icon: Icon$Z,
+        connectorId: "injected",
+    },
+    {
         title: "TrustWallet",
         icon: Icon$10,
         connectorId: "injected",
@@ -2451,6 +2456,11 @@ var connectors = [
         icon: Icon$12,
         connectorId: "bsc",
     },
+    {
+        title: "Coin98Wallet",
+        icon: Icon$Z,
+        connectorId: "injected",
+    }
 ];
 var localStorageKey = "accountStatus";
 
