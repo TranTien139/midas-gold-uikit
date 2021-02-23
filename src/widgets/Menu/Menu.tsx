@@ -30,13 +30,12 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   height: ${MENU_HEIGHT}px;
   // background-color: ${({ theme }) => theme.nav.background};
   background-color: #18181A;
-  border-bottom: solid 2px #CFCECE;
+  border-bottom: solid 1px #c9c4d4;
   z-index: 20;
   transform: translate3d(0, 0, 0);
 `;
 
-const BodyWrapper = styled.div`
-  position: relative;
+const BodyWrapper = styled.div`  position: relative;
   display: flex;
 `;
 

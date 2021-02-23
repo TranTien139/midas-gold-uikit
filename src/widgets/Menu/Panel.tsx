@@ -24,13 +24,13 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   width: ${({ isPushed }) => (isPushed ? `${SIDEBAR_WIDTH_FULL}px` : 0)};
   height: 100vh;
   transition: padding-top 0.2s, width 0.2s;
-  border-right: ${({ isPushed }) => (isPushed ? "2px solid #CFCECE" : 0)};
+  border-right: ${({ isPushed }) => (isPushed ? "1px solid #c9c4d4" : 0)};
   z-index: 11;
   overflow: ${({ isPushed }) => (isPushed ? "initial" : "hidden")};
   transform: translate3d(0, 0, 0);
 
   ${({ theme }) => theme.mediaQueries.nav} {
-    border-right: 2px solid #CFCECE;
+    border-right: 1px solid #c9c4d4;
     width: ${({ isPushed }) => `${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px`};
   }
 `;
