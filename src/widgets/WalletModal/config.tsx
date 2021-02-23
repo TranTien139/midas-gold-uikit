@@ -13,16 +13,6 @@ const connectors: Config[] = [
     connectorId: "injected",
   },
   {
-    title: "MidasWallet",
-    icon: Metamask,
-    connectorId: "injected",
-  },
-  {
-    title: "Coin98Wallet",
-    icon: Metamask,
-    connectorId: "injected",
-  },
-  {
     title: "TrustWallet",
     icon: TrustWallet,
     connectorId: "injected",
