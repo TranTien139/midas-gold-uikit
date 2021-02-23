@@ -35,7 +35,7 @@ const ConnectModal: React.FC<Props> = ({ login, onDismiss = () => null }) => (
       external
     >
       <HelpIcon color="primary" mr="6px" />
-      Learn how to connect
+      Learn how to connect {config.length}
     </HelpLink>
   </Modal>
 );
