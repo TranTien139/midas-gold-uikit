@@ -4,8 +4,8 @@ import TokenPocket from "./icons/TokenPocket";
 import TrustWallet from "./icons/TrustWallet";
 import WalletConnect from "./icons/WalletConnect";
 import BinanceChain from "./icons/BinanceChain";
-import midasWallet from './icons/midasWallet';
-import coin98Wallet from './icons/coin98Wallet';
+import midasWallet from "./icons/MidasWallet";
+import coin98Wallet from "./icons/Coin98Wallet";
 import { Config } from "./types";
 
 const connectors: Config[] = [
