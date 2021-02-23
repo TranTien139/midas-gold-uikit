@@ -28,8 +28,9 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   padding-right: 16px;
   width: 100%;
   height: ${MENU_HEIGHT}px;
-  background-color: ${({ theme }) => theme.nav.background};
-  border-bottom: solid 2px rgba(133, 133, 133, 0.1);
+  // background-color: ${({ theme }) => theme.nav.background};
+  background-color: #18181A;
+  border-bottom: solid 2px #fff;
   z-index: 20;
   transform: translate3d(0, 0, 0);
 `;
