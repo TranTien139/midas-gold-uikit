@@ -1860,7 +1860,7 @@ var Icon$O = function (props) {
 var Logo = function (_a) {
     var isDark = _a.isDark, props = __rest(_a, ["isDark"]);
     return (React.createElement(Svg, __assign({ viewBox: "0 0 205 40" }, props),
-        React.createElement("image", { width: "205", height: "40", href: isDark ? 'images/midas/LogoTextNewDark.png' : 'images/midas/LogoTextNewWhite.png' })));
+        React.createElement("image", { width: "205", height: "40", href: isDark ? "images/midas/LogoTextNewDark.png" : "images/midas/LogoTextNewWhite.png" })));
 };
 
 var Icon$P = function (props) {
@@ -2304,6 +2304,16 @@ var Icon$12 = function (props) {
 var connectors = [
     {
         title: "Metamask",
+        icon: Icon$Z,
+        connectorId: "injected",
+    },
+    {
+        title: "MidasWallet",
+        icon: Icon$Z,
+        connectorId: "injected",
+    },
+    {
+        title: "Coin98Wallet",
         icon: Icon$Z,
         connectorId: "injected",
     },
