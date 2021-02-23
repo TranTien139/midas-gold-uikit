@@ -1138,7 +1138,7 @@ var Progress = function (_a) {
 var rotate$1 = styled.keyframes(templateObject_1$r || (templateObject_1$r = __makeTemplateObject(["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"], ["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"])));
 var SpinnerIcon = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
-        React__default['default'].createElement("image", { width: "96", height: "96", href: "images/midas/9.png" })));
+        React__default['default'].createElement("image", { width: "96", height: "96", href: "images/midas/loading.png" })));
 };
 var Container$1 = styled__default['default'].div(templateObject_2$6 || (templateObject_2$6 = __makeTemplateObject(["\n  position: relative;\n"], ["\n  position: relative;\n"])));
 var RotatingPancakeIcon = styled__default['default'](SpinnerIcon)(templateObject_3$2 || (templateObject_3$2 = __makeTemplateObject(["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s linear infinite;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s linear infinite;\n  transform: translate3d(0, 0, 0);\n"])), rotate$1);
@@ -2427,11 +2427,6 @@ var connectors = [
         connectorId: "injected",
     },
     {
-        title: "MidasWallet",
-        icon: Icon$Z,
-        connectorId: "injected",
-    },
-    {
         title: "TrustWallet",
         icon: Icon$10,
         connectorId: "injected",
@@ -2456,11 +2451,6 @@ var connectors = [
         icon: Icon$12,
         connectorId: "bsc",
     },
-    {
-        title: "Coin98Wallet",
-        icon: Icon$Z,
-        connectorId: "injected",
-    }
 ];
 var localStorageKey = "accountStatus";
 
