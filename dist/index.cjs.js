@@ -2193,7 +2193,7 @@ var PanelBody = function (_a) {
     var handleClick = isMobile ? function () { return pushNav(false); } : undefined;
     return (React__default['default'].createElement(Container$3, null, links.map(function (entry) {
         var Icon = Icons[entry.icon];
-        var iconElement = React__default['default'].createElement(Icon, { width: "24px", mr: "8px" });
+        var iconElement = React__default['default'].createElement(Icon, { width: "24px", height: "30px", mr: "8px" });
         var calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
         if (entry.items) {
             return (React__default['default'].createElement(Accordion, { key: entry.label, isPushed: isPushed, pushNav: pushNav, icon: iconElement, label: entry.label, initialOpenState: entry.initialOpenState, className: calloutClass }, isPushed &&
