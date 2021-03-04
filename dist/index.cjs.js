@@ -2118,7 +2118,7 @@ var socials = [
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "",
+        href: "https://twitter.com/MidasGoldFi",
     },
 ];
 var MENU_HEIGHT = 64;
