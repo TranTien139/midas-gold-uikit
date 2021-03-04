@@ -2107,11 +2107,11 @@ var socials = [
         items: [
             {
                 label: "English",
-                href: "",
+                href: "https://t.me/midasprotocolglobal",
             },
             {
                 label: "Announcements",
-                href: "",
+                href: "https://t.me/MidasPR",
             }
         ],
     },
