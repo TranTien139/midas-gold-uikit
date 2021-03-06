@@ -2561,6 +2561,8 @@ var MobileOnlyOverlay = styled(Overlay)(templateObject_5$1 || (templateObject_5$
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 });
+var FlexCustom = styled(Flex)(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n    position: absolute;\n    right: 150px;\n    a{\n    color: #FFCB23;\n    }\n"], ["\n    position: absolute;\n    right: 150px;\n    a{\n    color: #FFCB23;\n    }\n"])));
+var FlexCustom1 = styled(Flex)(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n    position: absolute;\n    right: 250px;\n    a{\n    color: #FFCB23;\n    }\n"], ["\n    position: absolute;\n    right: 250px;\n    a{\n    color: #FFCB23;\n    }\n"])));
 var Menu = function (_a) {
     var _b;
     var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, priceLink = _a.priceLink, profile = _a.profile, children = _a.children;
@@ -2602,8 +2604,10 @@ var Menu = function (_a) {
     return (React.createElement(Wrapper$1, null,
         React.createElement(StyledNav, { showMenu: showMenu },
             React.createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
-            React.createElement(Flex, null,
-                React.createElement("a", { href: "hello" }, "BUY MDO")),
+            React.createElement(FlexCustom, null,
+                React.createElement("a", { href: "https://bsc.valuedefi.io/#/vswap?inputCurrency=bnb&outputCurrency=0xc1edcc306e6faab9da629efca48670be4678779d", target: "_blank" }, "Buy MDG")),
+            React.createElement(FlexCustom1, null,
+                React.createElement("a", { href: "https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x35e869B7456462b81cdB5e6e42434bD27f3F788c", target: "_blank" }, "Buy MDO")),
             React.createElement(Flex, null,
                 React.createElement(UserBlock, { account: account, login: login, logout: logout }),
                 profile && React.createElement(Avatar, { profile: profile }))),
@@ -2612,7 +2616,7 @@ var Menu = function (_a) {
             React.createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
             React.createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };
-var templateObject_1$H, templateObject_2$f, templateObject_3$8, templateObject_4$3, templateObject_5$1;
+var templateObject_1$H, templateObject_2$f, templateObject_3$8, templateObject_4$3, templateObject_5$1, templateObject_6, templateObject_7;
 
 var ToastAction = function (_a) {
     var action = _a.action;

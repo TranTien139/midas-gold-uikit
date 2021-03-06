@@ -57,6 +57,22 @@ const MobileOnlyOverlay = styled(Overlay)`
   }
 `;
 
+const FlexCustom = styled(Flex)`
+    position: absolute;
+    right: 150px;
+    a{
+    color: #FFCB23;
+    }
+`
+
+const FlexCustom1 = styled(Flex)`
+    position: absolute;
+    right: 250px;
+    a{
+    color: #FFCB23;
+    }
+`
+
 const Menu: React.FC<NavProps> = ({
   account,
   login,
@@ -119,9 +135,12 @@ const Menu: React.FC<NavProps> = ({
           isDark={isDark}
           href={homeLink?.href ?? "/"}
         />
-        <Flex>
-          <a href="hello">BUY MDO</a>
-        </Flex>
+        <FlexCustom>
+          <a href="https://bsc.valuedefi.io/#/vswap?inputCurrency=bnb&outputCurrency=0xc1edcc306e6faab9da629efca48670be4678779d" target="_blank">Buy MDG</a>
+        </FlexCustom>
+        <FlexCustom1>
+          <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x35e869B7456462b81cdB5e6e42434bD27f3F788c" target="_blank">Buy MDO</a>
+        </FlexCustom1>
         <Flex>
           <UserBlock account={account} login={login} logout={logout} />
           {profile && <Avatar profile={profile} />}
