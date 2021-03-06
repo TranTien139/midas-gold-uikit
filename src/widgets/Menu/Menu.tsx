@@ -81,7 +81,6 @@ const FlexCustom1 = styled(Flex)`
       margin: 0px auto;
       color: #fff;
       font-weight: 700;
-      background-color: #FFCB23;
       border-radius: 20px;
       font-size: 14px;
       @media screen and (max-width: 500px){
