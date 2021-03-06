@@ -64,9 +64,12 @@ const FlexCustom = styled(Flex)`
       padding: 6px 20px;
       margin: 0px auto;
       color: #fff;
-      background-color: #FFCB23;
+      font-weight: 700;
       border-radius: 20px;
       font-size: 14px;
+      @media screen and (max-width: 500px){
+        display: none;
+      }
     }
 `
 
@@ -77,9 +80,13 @@ const FlexCustom1 = styled(Flex)`
       padding: 6px 20px;
       margin: 0px auto;
       color: #fff;
+      font-weight: 700;
       background-color: #FFCB23;
       border-radius: 20px;
       font-size: 14px;
+      @media screen and (max-width: 500px){
+        display: none;
+      }
     }
 `
 
