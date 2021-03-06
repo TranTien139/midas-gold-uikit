@@ -152,10 +152,10 @@ const Menu: React.FC<NavProps> = ({
           href={homeLink?.href ?? "/"}
         />
         <FlexCustom>
-          <a href="https://bsc.valuedefi.io/#/vswap?inputCurrency=bnb&outputCurrency=0xc1edcc306e6faab9da629efca48670be4678779d" target="_blank">Buy MDG</a>
+          <a href="https://bsc.valuedefi.io/#/vswap?inputCurrency=bnb&outputCurrency=0x35e869B7456462b81cdB5e6e42434bD27f3F788c" target="_blank">Buy MDO</a>
         </FlexCustom>
         <FlexCustom1>
-          <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x35e869B7456462b81cdB5e6e42434bD27f3F788c" target="_blank">Buy MDO</a>
+          <a href="https://bsc.valuedefi.io/#/vswap?inputCurrency=bnb&outputCurrency=0xc1edcc306e6faab9da629efca48670be4678779d" target="_blank">Buy MDG</a>
         </FlexCustom1>
         <Flex>
           <UserBlock account={account} login={login} logout={logout} />
