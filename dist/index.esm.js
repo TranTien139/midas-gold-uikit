@@ -2561,8 +2561,9 @@ var MobileOnlyOverlay = styled(Overlay)(templateObject_5$1 || (templateObject_5$
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 });
-var FlexCustom = styled(Flex)(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n    position: absolute;\n    right: 150px;\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"], ["\n    position: absolute;\n    right: 150px;\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"])));
-var FlexCustom1 = styled(Flex)(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n    position: absolute;\n    right: 250px;\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"], ["\n    position: absolute;\n    right: 250px;\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"])));
+var FlexCustom = styled(Flex)(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n    position: absolute;\n    right: 250px;\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"], ["\n    position: absolute;\n    right: 250px;\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"])));
+var FlexCustom1 = styled(Flex)(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n    position: absolute;\n    right: 350px;\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"], ["\n    position: absolute;\n    right: 350px;\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"])));
+var FlexCustom2 = styled(Flex)(templateObject_8 || (templateObject_8 = __makeTemplateObject(["\nposition: absolute;\n    right: 150px;\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"], ["\nposition: absolute;\n    right: 150px;\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"])));
 var Menu = function (_a) {
     var _b;
     var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, priceLink = _a.priceLink, profile = _a.profile, children = _a.children;
@@ -2604,6 +2605,8 @@ var Menu = function (_a) {
     return (React.createElement(Wrapper$1, null,
         React.createElement(StyledNav, { showMenu: showMenu },
             React.createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
+            React.createElement(FlexCustom2, null,
+                React.createElement("a", { href: "https://midasdollar.fi", target: "_blank" }, "Mi-Dollar")),
             React.createElement(FlexCustom, null,
                 React.createElement("a", { href: "https://bsc.valuedefi.io/#/vswap?inputCurrency=bnb&outputCurrency=0x35e869B7456462b81cdB5e6e42434bD27f3F788c", target: "_blank" }, "Buy MDO")),
             React.createElement(FlexCustom1, null,
@@ -2616,7 +2619,7 @@ var Menu = function (_a) {
             React.createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
             React.createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };
-var templateObject_1$H, templateObject_2$f, templateObject_3$8, templateObject_4$3, templateObject_5$1, templateObject_6, templateObject_7;
+var templateObject_1$H, templateObject_2$f, templateObject_3$8, templateObject_4$3, templateObject_5$1, templateObject_6, templateObject_7, templateObject_8;
 
 var ToastAction = function (_a) {
     var action = _a.action;

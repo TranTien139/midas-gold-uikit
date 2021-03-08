@@ -59,7 +59,7 @@ const MobileOnlyOverlay = styled(Overlay)`
 
 const FlexCustom = styled(Flex)`
     position: absolute;
-    right: 150px;
+    right: 250px;
     a{
       padding: 6px 20px;
       margin: 0px auto;
@@ -75,7 +75,23 @@ const FlexCustom = styled(Flex)`
 
 const FlexCustom1 = styled(Flex)`
     position: absolute;
-    right: 250px;
+    right: 350px;
+    a{
+      padding: 6px 20px;
+      margin: 0px auto;
+      color: #fff;
+      font-weight: 700;
+      border-radius: 20px;
+      font-size: 14px;
+      @media screen and (max-width: 500px){
+        display: none;
+      }
+    }
+`
+
+const FlexCustom2 = styled(Flex)`
+position: absolute;
+    right: 150px;
     a{
       padding: 6px 20px;
       margin: 0px auto;
@@ -151,6 +167,10 @@ const Menu: React.FC<NavProps> = ({
           isDark={isDark}
           href={homeLink?.href ?? "/"}
         />
+
+        <FlexCustom2>
+          <a href="https://midasdollar.fi" target="_blank">Mi-Dollar</a>
+        </FlexCustom2>
         <FlexCustom>
           <a href="https://bsc.valuedefi.io/#/vswap?inputCurrency=bnb&outputCurrency=0x35e869B7456462b81cdB5e6e42434bD27f3F788c" target="_blank">Buy MDO</a>
         </FlexCustom>
