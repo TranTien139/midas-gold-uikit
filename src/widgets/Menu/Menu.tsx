@@ -60,7 +60,7 @@ const MobileOnlyOverlay = styled(Overlay)`
 const FlexCustom = styled(Flex)`
     position: absolute;
     right: 250px;
-    border-right: 1px solid #fff;
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
     a{
       padding: 6px 20px;
       margin: 0px auto;
