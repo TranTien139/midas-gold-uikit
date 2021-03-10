@@ -2230,7 +2230,7 @@ var PanelBody = function (_a) {
                 entry.items.map(function (item) { return (React__default['default'].createElement(MenuEntry, { key: item.href, secondary: true, isActive: item.href === location.pathname, onClick: handleClick },
                     React__default['default'].createElement(MenuLink, { href: item.href }, item.label))); })));
         }
-        var isActive = location.pathname !== "/" ? location.pathname.includes(entry.href) : entry.href === location.pathname;
+        var isActive = entry.href !== "/" ? location.pathname.includes(entry.href) : entry.href === location.pathname;
         return (React__default['default'].createElement(MenuEntry, { key: entry.label, isActive: isActive, className: calloutClass },
             React__default['default'].createElement(MenuLink, { href: entry.href, onClick: handleClick },
                 iconElement,
