@@ -32,7 +32,7 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
     <Container>
       {links.map((entry) => {
         const Icon = Icons[entry.icon];
-        const iconElement = entry.label === 'ReverseFund' ?  <Icon width="20px" height="20px" mr="8px" /> : <Icon width="24px" height="30px" mr="8px" />;
+        const iconElement = entry.label == 'Reserve Fund' ?  <Icon width="20px" height="20px" mr="8px" /> : <Icon width="24px" height="30px" mr="8px" />;
         const calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
 
         if (entry.items) {
