@@ -2223,7 +2223,7 @@ var PanelBody = function (_a) {
     var handleClick = isMobile ? function () { return pushNav(false); } : undefined;
     return (React.createElement(Container$3, null, links.map(function (entry) {
         var Icon = Icons[entry.icon];
-        var iconElement = entry.label == 'Reserve Fund' ? React.createElement(Icon, { width: "20px", height: "20px", mr: "8px" }) : React.createElement(Icon, { width: "24px", height: "30px", mr: "8px" });
+        var iconElement = entry.label === 'Reserve Fund' ? React.createElement(Icon, { width: "20px", height: "20px", mr: "8px" }) : React.createElement(Icon, { width: "24px", height: "30px", mr: "8px" });
         var calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
         if (entry.items) {
             return (React.createElement(Accordion, { key: entry.label, isPushed: isPushed, pushNav: pushNav, icon: iconElement, label: entry.label, initialOpenState: entry.initialOpenState, className: calloutClass }, isPushed &&
@@ -2590,7 +2590,8 @@ var MobileOnlyOverlay = styled(Overlay)(templateObject_5$1 || (templateObject_5$
 });
 var FlexCustom = styled(Flex)(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n    position: absolute;\n    right: 250px;\n    border-right: 1px solid rgba(255, 255, 255, 0.4);\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"], ["\n    position: absolute;\n    right: 250px;\n    border-right: 1px solid rgba(255, 255, 255, 0.4);\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"])));
 var FlexCustom1 = styled(Flex)(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n    position: absolute;\n    right: 350px;\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"], ["\n    position: absolute;\n    right: 350px;\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"])));
-var FlexCustom2 = styled(Flex)(templateObject_8 || (templateObject_8 = __makeTemplateObject(["\nposition: absolute;\n    right: 150px;\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"], ["\nposition: absolute;\n    right: 150px;\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"])));
+var FlexCustom3 = styled(Flex)(templateObject_8 || (templateObject_8 = __makeTemplateObject(["\n    position: absolute;\n    right: 450px;\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"], ["\n    position: absolute;\n    right: 450px;\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"])));
+var FlexCustom2 = styled(Flex)(templateObject_9 || (templateObject_9 = __makeTemplateObject(["\nposition: absolute;\n    right: 150px;\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"], ["\nposition: absolute;\n    right: 150px;\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"])));
 var Menu = function (_a) {
     var _b;
     var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, priceLink = _a.priceLink, profile = _a.profile, children = _a.children;
@@ -2638,6 +2639,8 @@ var Menu = function (_a) {
                 React.createElement("a", { href: "https://bsc.valuedefi.io/#/vswap?inputCurrency=bnb&outputCurrency=0x35e869B7456462b81cdB5e6e42434bD27f3F788c", target: "_blank" }, "Buy MDO")),
             React.createElement(FlexCustom1, null,
                 React.createElement("a", { href: "https://bsc.valuedefi.io/#/vswap?inputCurrency=bnb&outputCurrency=0xc1edcc306e6faab9da629efca48670be4678779d", target: "_blank" }, "Buy MDG")),
+            React.createElement(FlexCustom3, null,
+                React.createElement("a", { href: "https://bsc.valuedefi.io/#/vswap?outputCurrency=0x075ffce0f10428c4d929032b37597b24f2a3ed51&inputCurrency=bnb", target: "_blank" }, "Buy MDG2")),
             React.createElement(Flex, null,
                 React.createElement(UserBlock, { account: account, login: login, logout: logout }),
                 profile && React.createElement(Avatar, { profile: profile }))),
@@ -2646,7 +2649,7 @@ var Menu = function (_a) {
             React.createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
             React.createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };
-var templateObject_1$H, templateObject_2$f, templateObject_3$8, templateObject_4$3, templateObject_5$1, templateObject_6, templateObject_7, templateObject_8;
+var templateObject_1$H, templateObject_2$f, templateObject_3$8, templateObject_4$3, templateObject_5$1, templateObject_6, templateObject_7, templateObject_8, templateObject_9;
 
 var ToastAction = function (_a) {
     var action = _a.action;

@@ -90,6 +90,22 @@ const FlexCustom1 = styled(Flex)`
     }
 `
 
+const FlexCustom3 = styled(Flex)`
+    position: absolute;
+    right: 450px;
+    a{
+      padding: 6px 20px;
+      margin: 0px auto;
+      color: #fff;
+      font-weight: 700;
+      border-radius: 20px;
+      font-size: 14px;
+      @media screen and (max-width: 500px){
+        display: none;
+      }
+    }
+`
+
 const FlexCustom2 = styled(Flex)`
 position: absolute;
     right: 150px;
@@ -178,6 +194,11 @@ const Menu: React.FC<NavProps> = ({
         <FlexCustom1>
           <a href="https://bsc.valuedefi.io/#/vswap?inputCurrency=bnb&outputCurrency=0xc1edcc306e6faab9da629efca48670be4678779d" target="_blank">Buy MDG</a>
         </FlexCustom1>
+
+        <FlexCustom3>
+          <a href="https://bsc.valuedefi.io/#/vswap?outputCurrency=0x075ffce0f10428c4d929032b37597b24f2a3ed51&inputCurrency=bnb" target="_blank">Buy MDG2</a>
+        </FlexCustom3>
+
         <Flex>
           <UserBlock account={account} login={login} logout={logout} />
           {profile && <Avatar profile={profile} />}
