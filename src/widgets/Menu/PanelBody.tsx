@@ -48,8 +48,11 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
             >
               {isPushed &&
                 entry.items.map((item) => (
-                  <MenuEntry key={item.href} secondary isActive={item.href === location.pathname} onClick={handleClick}>
-                    <MenuLink href={item.href}>{item.label}</MenuLink>
+                  <MenuEntry key={item.href} secondary isActive={item.href === location.pathname}>
+                    {item.href.indexOf('https://') === -1 ?
+                      <MenuLink href={item.href} onClick={handleClick}>{item.label}</MenuLink> :
+                      <a href={item.href} target="_blank">{item.label}</a>
+                    }
                   </MenuEntry>
                 ))}
             </Accordion>
