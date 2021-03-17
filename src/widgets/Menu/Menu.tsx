@@ -90,6 +90,22 @@ const FlexCustom1 = styled(Flex)`
     }
 `
 
+const FlexCustom2 = styled(Flex)`
+position: absolute;
+    right: 150px;
+    a{
+      padding: 6px 20px;
+      margin: 0px auto;
+      color: #fff;
+      font-weight: 700;
+      border-radius: 20px;
+      font-size: 14px;
+      @media screen and (max-width: 500px){
+        display: none;
+      }
+    }
+`
+
 const FlexCustom3 = styled(Flex)`
     position: absolute;
     right: 450px;
@@ -106,9 +122,9 @@ const FlexCustom3 = styled(Flex)`
     }
 `
 
-const FlexCustom2 = styled(Flex)`
-position: absolute;
-    right: 150px;
+const FlexCustom4 = styled(Flex)`
+    position: absolute;
+    right: 550px;
     a{
       padding: 6px 20px;
       margin: 0px auto;
@@ -136,6 +152,7 @@ const Menu: React.FC<NavProps> = ({
   priceLink,
   profile,
   children,
+  depositValue
 }) => {
   const { isXl } = useMatchBreakpoints();
   const isMobile = isXl === false;
@@ -184,6 +201,10 @@ const Menu: React.FC<NavProps> = ({
           isDark={isDark}
           href={homeLink?.href ?? "/"}
         />
+
+        <FlexCustom4>
+          <a>{ depositValue }</a>
+        </FlexCustom4>
 
         <FlexCustom2>
           <a href="https://midasdollar.fi" target="_blank">Mi-Dollar</a>
