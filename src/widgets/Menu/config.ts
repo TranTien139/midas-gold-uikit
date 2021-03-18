@@ -39,6 +39,11 @@ export const links = [
     href: "/layered-farming",
   },
   {
+    label: "Partnerships",
+    icon: "Partnerships",
+    href: "/partnerships"
+  },
+  {
     label: "Lottery",
     icon: "TicketIcon",
     href: "/lottery",

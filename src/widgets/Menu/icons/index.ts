@@ -19,3 +19,4 @@ export { default as TwitterIcon } from "./Twitter";
 export { default as AuditIcon } from "./Audit";
 export { default as Layered } from "./Layered";
 export { default as ReverseFund } from "./ReverseFund";
+export { default as Partnerships } from "./Partnership";
