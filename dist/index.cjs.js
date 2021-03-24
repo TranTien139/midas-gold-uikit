@@ -2253,9 +2253,10 @@ var PanelBody = function (_a) {
         var calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
         if (entry.items) {
             return (React__default['default'].createElement(Accordion, { key: entry.label, isPushed: isPushed, pushNav: pushNav, icon: iconElement, label: entry.label, initialOpenState: entry.initialOpenState, className: calloutClass }, isPushed &&
-                entry.items.map(function (item) { return (React__default['default'].createElement(MenuEntry, { key: item.href, secondary: true, isActive: item.href === location.pathname }, item.href.indexOf('https://') === -1 ?
+                entry.items.map(function (item) { return (React__default['default'].createElement(MenuEntry, { key: item.href, secondary: true, isActive: item.href === location.pathname }, (item.href.indexOf('https://') === -1) ?
                     React__default['default'].createElement(MenuLink, { href: item.href, onClick: handleClick }, item.label) :
-                    React__default['default'].createElement("a", { href: item.href, target: "_blank" }, item.label))); })));
+                    (item.href.indexOf('https://midasgold.network') !== -1) ? React__default['default'].createElement("a", { href: item.href }, item.label) :
+                        React__default['default'].createElement("a", { href: item.href, target: "_blank" }, item.label))); })));
         }
         var isActive = entry.href !== "/" ? location.pathname.includes(entry.href) : entry.href === location.pathname;
         return (React__default['default'].createElement(MenuEntry, { key: entry.label, isActive: isActive, className: calloutClass },
