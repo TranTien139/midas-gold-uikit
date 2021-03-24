@@ -2240,7 +2240,7 @@ var PanelBody = function (_a) {
         var calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
         if (entry.items) {
             return (React.createElement(Accordion, { key: entry.label, isPushed: isPushed, pushNav: pushNav, icon: iconElement, label: entry.label, initialOpenState: entry.initialOpenState, className: calloutClass }, isPushed &&
-                entry.items.map(function (item) { return (React.createElement(MenuEntry, { key: item.href, secondary: true, isActive: item.href.replace('https://midasgold.network/', '').indexOf(location.pathname) !== -1 }, (item.href.indexOf('https://') === -1) ?
+                entry.items.map(function (item) { return (React.createElement(MenuEntry, { key: item.href, secondary: true, isActive: item.href.indexOf(location.pathname) !== -1 }, (item.href.indexOf('https://') === -1) ?
                     React.createElement(MenuLink, { href: item.href, onClick: handleClick }, item.label) :
                     (item.href.indexOf('https://midasgold.network') !== -1) ? React.createElement(MenuLink, { href: item.href }, item.label) :
                         React.createElement(MenuLink, { href: item.href, target: "_blank" }, item.label))); })));
