@@ -2246,8 +2246,13 @@ var PanelBody = function (_a) {
                         React.createElement(MenuLink, { href: item.href, target: "_blank" }, item.label))); })));
         }
         var isActive = entry.href !== "/" ? location.pathname.includes(entry.href) : entry.href === location.pathname;
+        var checkLoadPage = (location.pathname === '/'
+            || location.pathname === '/farms'
+            || location.pathname === '/touch'
+            || location.pathname === '/reserve-fund');
+        var newHref = checkLoadPage ? entry.href : "https://midasgold.network" + location.pathname;
         return (React.createElement(MenuEntry, { key: entry.label, isActive: isActive, className: calloutClass },
-            React.createElement(MenuLink, { href: entry.href, onClick: handleClick },
+            React.createElement(MenuLink, { href: newHref, onClick: handleClick },
                 iconElement,
                 (entry.href && entry.href.indexOf('https://') === -1) ?
                     React.createElement(LinkLabel, { isPushed: isPushed }, entry.label) :
