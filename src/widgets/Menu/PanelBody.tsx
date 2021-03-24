@@ -66,7 +66,7 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
           || location.pathname === '/touch'
           || location.pathname === '/reserve-fund'
         )
-        const newHref  = checkLoadPage ? entry.href : `https://midasgold.network${location.pathname}`
+        const newHref  = checkLoadPage ? entry.href : `https://midasgold.network${entry.href}`
         return (
           <MenuEntry key={entry.label} isActive={isActive} className={calloutClass}>
             <MenuLink href={newHref} onClick={handleClick}>

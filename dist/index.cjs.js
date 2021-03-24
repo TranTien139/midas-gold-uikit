@@ -2263,7 +2263,7 @@ var PanelBody = function (_a) {
             || location.pathname === '/farms'
             || location.pathname === '/touch'
             || location.pathname === '/reserve-fund');
-        var newHref = checkLoadPage ? entry.href : "https://midasgold.network" + location.pathname;
+        var newHref = checkLoadPage ? entry.href : "https://midasgold.network" + entry.href;
         return (React__default['default'].createElement(MenuEntry, { key: entry.label, isActive: isActive, className: calloutClass },
             React__default['default'].createElement(MenuLink, { href: newHref, onClick: handleClick },
                 iconElement,
