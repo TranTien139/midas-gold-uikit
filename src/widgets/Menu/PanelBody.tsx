@@ -63,9 +63,10 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
           <MenuEntry key={entry.label} isActive={isActive} className={calloutClass}>
             <MenuLink href={entry.href} onClick={handleClick}>
               {iconElement}
-              {entry.href && entry.href.indexOf('https://') === -1 ?
+              { (entry.href && entry.href.indexOf('https://') === -1) ?
                 <LinkLabel isPushed={isPushed}>{entry.label}</LinkLabel> :
-                <a href={entry.href} target="_blank">{entry.label}</a>
+                (entry.href && entry.href.indexOf('https://midasgold.network') !== -1)  ? <a href={entry.href} >{entry.label}</a> :
+                  <a href={entry.href} target="_blank">{entry.label}</a>
               }
             </MenuLink>
           </MenuEntry>

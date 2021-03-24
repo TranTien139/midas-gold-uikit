@@ -2261,9 +2261,10 @@ var PanelBody = function (_a) {
         return (React__default['default'].createElement(MenuEntry, { key: entry.label, isActive: isActive, className: calloutClass },
             React__default['default'].createElement(MenuLink, { href: entry.href, onClick: handleClick },
                 iconElement,
-                entry.href && entry.href.indexOf('https://') === -1 ?
+                (entry.href && entry.href.indexOf('https://') === -1) ?
                     React__default['default'].createElement(LinkLabel, { isPushed: isPushed }, entry.label) :
-                    React__default['default'].createElement("a", { href: entry.href, target: "_blank" }, entry.label))));
+                    (entry.href && entry.href.indexOf('https://midasgold.network') !== -1) ? React__default['default'].createElement("a", { href: entry.href }, entry.label) :
+                        React__default['default'].createElement("a", { href: entry.href, target: "_blank" }, entry.label))));
     })));
 };
 var templateObject_1$B;
