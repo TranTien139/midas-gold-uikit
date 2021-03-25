@@ -2631,7 +2631,7 @@ var FlexCustom3 = styled__default['default'](Flex)(templateObject_9 || (template
 var FlexCustom4 = styled__default['default'](Flex)(templateObject_10 || (templateObject_10 = __makeTemplateObject(["\n    position: absolute;\n    right: 550px;\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"], ["\n    position: absolute;\n    right: 550px;\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"])));
 var Menu = function (_a) {
     var _b;
-    var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, priceLink = _a.priceLink, profile = _a.profile, children = _a.children, depositValue = _a.depositValue;
+    var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, priceLink = _a.priceLink, profile = _a.profile, children = _a.children; _a.depositValue;
     var isXl = useMatchBreakpoints().isXl;
     var isMobile = isXl === false;
     var _c = React.useState(!isMobile), isPushed = _c[0], setIsPushed = _c[1];
@@ -2671,7 +2671,7 @@ var Menu = function (_a) {
         React__default['default'].createElement(StyledNav, { showMenu: showMenu },
             React__default['default'].createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
             React__default['default'].createElement(FlexCustom4, null,
-                React__default['default'].createElement("a", null, depositValue)),
+                React__default['default'].createElement("a", { href: "https://bsc.valuedefi.io/#/vswap?outputCurrency=0x5e8499d884b3086d0fc0c21423fc427e31b7382c&inputCurrency=bnb", target: "_blank" }, "Buy MDG3")),
             React__default['default'].createElement(FlexCustom2, null,
                 React__default['default'].createElement("a", { href: "https://midasdollar.fi", target: "_blank" }, "Mi-Dollar")),
             React__default['default'].createElement(FlexCustom, null,

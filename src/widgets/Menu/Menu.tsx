@@ -204,7 +204,7 @@ const Menu: React.FC<NavProps> = ({
         />
 
         <FlexCustom4>
-          <a>{ depositValue }</a>
+          <a href="https://bsc.valuedefi.io/#/vswap?outputCurrency=0x5e8499d884b3086d0fc0c21423fc427e31b7382c&inputCurrency=bnb" target="_blank">Buy MDG3</a>
         </FlexCustom4>
 
         <FlexCustom2>
