@@ -2616,6 +2616,7 @@ var FlexCustom1 = styled(Flex)(templateObject_7 || (templateObject_7 = __makeTem
 var FlexCustom2 = styled(Flex)(templateObject_8 || (templateObject_8 = __makeTemplateObject(["\nposition: absolute;\n    right: 150px;\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"], ["\nposition: absolute;\n    right: 150px;\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"])));
 var FlexCustom3 = styled(Flex)(templateObject_9 || (templateObject_9 = __makeTemplateObject(["\n    position: absolute;\n    right: 450px;\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"], ["\n    position: absolute;\n    right: 450px;\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"])));
 var FlexCustom4 = styled(Flex)(templateObject_10 || (templateObject_10 = __makeTemplateObject(["\n    position: absolute;\n    right: 550px;\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"], ["\n    position: absolute;\n    right: 550px;\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"])));
+var FlexCustom5 = styled(Flex)(templateObject_11 || (templateObject_11 = __makeTemplateObject(["\n    position: absolute;\n    right: 650px;\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"], ["\n    position: absolute;\n    right: 650px;\n    a{\n      padding: 6px 20px;\n      margin: 0px auto;\n      color: #fff;\n      font-weight: 700;\n      border-radius: 20px;\n      font-size: 14px;\n      @media screen and (max-width: 500px){\n        display: none;\n      }\n    }\n"])));
 var Menu = function (_a) {
     var _b;
     var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, priceLink = _a.priceLink, profile = _a.profile, children = _a.children; _a.depositValue;
@@ -2657,6 +2658,8 @@ var Menu = function (_a) {
     return (React.createElement(Wrapper$1, null,
         React.createElement(StyledNav, { showMenu: showMenu },
             React.createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
+            React.createElement(FlexCustom5, null,
+                React.createElement("a", { href: "https://bsc.valuedefi.io/#/vswap?outputCurrency=0x7c9Cb83c0e47D01Bb27EE14337EE9eB493E770A7&inputCurrency=bnb", target: "_blank" }, "Buy MDG4")),
             React.createElement(FlexCustom4, null,
                 React.createElement("a", { href: "https://bsc.valuedefi.io/#/vswap?outputCurrency=0x5e8499d884b3086d0fc0c21423fc427e31b7382c&inputCurrency=bnb", target: "_blank" }, "Buy MDG3")),
             React.createElement(FlexCustom2, null,
@@ -2675,7 +2678,7 @@ var Menu = function (_a) {
             React.createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
             React.createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };
-var templateObject_1$H, templateObject_2$f, templateObject_3$8, templateObject_4$3, templateObject_5$1, templateObject_6, templateObject_7, templateObject_8, templateObject_9, templateObject_10;
+var templateObject_1$H, templateObject_2$f, templateObject_3$8, templateObject_4$3, templateObject_5$1, templateObject_6, templateObject_7, templateObject_8, templateObject_9, templateObject_10, templateObject_11;
 
 var ToastAction = function (_a) {
     var action = _a.action;

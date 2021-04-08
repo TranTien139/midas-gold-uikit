@@ -139,6 +139,22 @@ const FlexCustom4 = styled(Flex)`
     }
 `
 
+const FlexCustom5 = styled(Flex)`
+    position: absolute;
+    right: 650px;
+    a{
+      padding: 6px 20px;
+      margin: 0px auto;
+      color: #fff;
+      font-weight: 700;
+      border-radius: 20px;
+      font-size: 14px;
+      @media screen and (max-width: 500px){
+        display: none;
+      }
+    }
+`
+
 const Menu: React.FC<NavProps> = ({
   account,
   login,
@@ -202,6 +218,10 @@ const Menu: React.FC<NavProps> = ({
           isDark={isDark}
           href={homeLink?.href ?? "/"}
         />
+
+        <FlexCustom5>
+          <a href="https://bsc.valuedefi.io/#/vswap?outputCurrency=0x7c9Cb83c0e47D01Bb27EE14337EE9eB493E770A7&inputCurrency=bnb" target="_blank">Buy MDG4</a>
+        </FlexCustom5>
 
         <FlexCustom4>
           <a href="https://bsc.valuedefi.io/#/vswap?outputCurrency=0x5e8499d884b3086d0fc0c21423fc427e31b7382c&inputCurrency=bnb" target="_blank">Buy MDG3</a>
