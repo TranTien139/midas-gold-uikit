@@ -2261,7 +2261,7 @@ var PanelBody = function (_a) {
                     return (React.createElement(MenuEntry, { key: item.href, secondary: true, isActive: location.pathname !== "/" ? item.href.indexOf(location.pathname) !== -1 : item.href === location.pathname }, (item.href.indexOf('https://') === -1) ?
                         React.createElement(MenuLink, { href: item.href, onClick: handleClick }, item.label) :
                         (item.href.indexOf('https://midasgold.network') !== -1) ? React.createElement(React.Fragment, null,
-                            item.icon && IconSub && React.createElement(IconSub, { width: "20px", height: "15px", mr: "8px" }),
+                            item.logo && IconSub && React.createElement(IconSub, { width: "20px", height: "15px", mr: "8px" }),
                             React.createElement(MenuLink, { href: item.href }, item.label)) :
                             React.createElement(MenuLink, { href: item.href, target: "_blank" }, item.label)));
                 })));
