@@ -1979,7 +1979,8 @@ var IconModule = /*#__PURE__*/Object.freeze({
     Layered: Icon$Z,
     ReverseFund: Icon$_,
     Partnerships: Icon$$,
-    BridgeIcon: Icon$10
+    BridgeIcon: Icon$10,
+    BridgeIconSub: Icon$10
 });
 
 var MenuButton = styled(Button)(templateObject_1$x || (templateObject_1$x = __makeTemplateObject(["\n  color: ", ";\n  padding: 0 8px;\n  border-radius: 8px;\n"], ["\n  color: ", ";\n  padding: 0 8px;\n  border-radius: 8px;\n"])), function (_a) {
@@ -2255,10 +2256,15 @@ var PanelBody = function (_a) {
         var calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
         if (entry.items) {
             return (React.createElement(Accordion, { key: entry.label, isPushed: isPushed, pushNav: pushNav, icon: iconElement, label: entry.label, initialOpenState: entry.initialOpenState, className: calloutClass }, isPushed &&
-                entry.items.map(function (item) { return (React.createElement(MenuEntry, { key: item.href, secondary: true, isActive: location.pathname !== "/" ? item.href.indexOf(location.pathname) !== -1 : item.href === location.pathname }, (item.href.indexOf('https://') === -1) ?
-                    React.createElement(MenuLink, { href: item.href, onClick: handleClick }, item.label) :
-                    (item.href.indexOf('https://midasgold.network') !== -1) ? React.createElement(MenuLink, { href: item.href }, item.label) :
-                        React.createElement(MenuLink, { href: item.href, target: "_blank" }, item.label))); })));
+                entry.items.map(function (item) {
+                    var IconSub = item.logo ? Icons[item.logo] : null;
+                    return (React.createElement(MenuEntry, { key: item.href, secondary: true, isActive: location.pathname !== "/" ? item.href.indexOf(location.pathname) !== -1 : item.href === location.pathname }, (item.href.indexOf('https://') === -1) ?
+                        React.createElement(MenuLink, { href: item.href, onClick: handleClick }, item.label) :
+                        (item.href.indexOf('https://midasgold.network') !== -1) ? React.createElement(React.Fragment, null,
+                            item.icon && IconSub && React.createElement(IconSub, { width: "20px", height: "15px", mr: "8px" }),
+                            React.createElement(MenuLink, { href: item.href }, item.label)) :
+                            React.createElement(MenuLink, { href: item.href, target: "_blank" }, item.label)));
+                })));
         }
         var isActive = entry.href !== "/" ? location.pathname.includes(entry.href) : entry.href === location.pathname;
         var checkLoadPage = (location.pathname === '/'

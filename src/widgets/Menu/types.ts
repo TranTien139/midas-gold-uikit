@@ -24,8 +24,10 @@ export interface NavTheme {
 }
 
 export interface MenuSubEntry {
+  icon: JSX.Element;
   label: string;
   href: string;
+  logo?: string;
   calloutClass?: string;
 }
 

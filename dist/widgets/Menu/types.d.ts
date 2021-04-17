@@ -19,8 +19,10 @@ export interface NavTheme {
     hover: string;
 }
 export interface MenuSubEntry {
+    icon: JSX.Element;
     label: string;
     href: string;
+    logo?: string;
     calloutClass?: string;
 }
 export interface MenuEntry {
