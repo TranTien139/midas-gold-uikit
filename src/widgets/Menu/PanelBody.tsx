@@ -22,6 +22,12 @@ const Container = styled.div`
   height: 100%;
 `;
 
+const WrapIconSub = styled.div`
+    position: absolute;
+    top: 15px;
+    left: 9px;
+`
+
 const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
   const location = useLocation();
 
@@ -49,10 +55,10 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
               {isPushed &&
                 entry.items.map((item) =>{
                   const IconSub = item.logo ? Icons[item.logo] : null;
-                  return (<MenuEntry key={item.href} secondary isActive={location.pathname !== "/" ? item.href.indexOf(location.pathname) !== -1 : item.href === location.pathname}>
+                  return (<MenuEntry key={item.href} secondary isActive={location.pathname !== "/" ? item.href.indexOf(location.pathname) !== -1 : item.href === location.pathname} style={{ position: 'relative' }}>
                     { (item.href.indexOf('https://') === -1) ?
                       <MenuLink href={item.href} onClick={handleClick}>{item.label}</MenuLink>:
-                      (item.href.indexOf('https://midasgold.network') !== -1)  ? <>{item.logo && IconSub && <IconSub width="20px" height="15px" mr="8px" /> }<MenuLink href={item.href} >{item.label}</MenuLink></> :
+                      (item.href.indexOf('https://midasgold.network') !== -1)  ? <>{item.logo && IconSub && <WrapIconSub><IconSub width="20px" height="15px" mr="8px" /></WrapIconSub> }<MenuLink href={item.href} >{item.label}</MenuLink></> :
                         <MenuLink href={item.href} target="_blank">{item.label}</MenuLink>
                     }
                   </MenuEntry>
@@ -70,7 +76,7 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
         const newHref  = checkLoadPage ? entry.href : `https://midasgold.network${entry.href}`
         return (
           <MenuEntry key={entry.label} isActive={isActive} className={calloutClass}>
-            <MenuLink href={newHref} onClick={handleClick}>
+            <MenuLink href={newHref} onClick={handleClick} >
               {iconElement}
               { (entry.href && entry.href.indexOf('https://') === -1) ?
                 <LinkLabel isPushed={isPushed}>{entry.label}</LinkLabel> :

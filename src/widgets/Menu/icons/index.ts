@@ -21,4 +21,4 @@ export { default as Layered } from "./Layered";
 export { default as ReverseFund } from "./ReverseFund";
 export { default as Partnerships } from "./Partnership";
 export { default as BridgeIcon } from "./Bridge";
-export { default as BridgeIconSub } from "./Bridge";
+export { default as BridgeIconSub } from "./BridgeIconSub";
