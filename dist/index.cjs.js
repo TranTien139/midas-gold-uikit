@@ -2265,7 +2265,7 @@ var MenuLink = function (_a) {
 
 var Icons = IconModule;
 var Container$3 = styled__default['default'].div(templateObject_1$B || (templateObject_1$B = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  overflow-x: hidden;\n  height: 100%;\n"], ["\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  overflow-x: hidden;\n  height: 100%;\n"])));
-var WrapIconSub = styled__default['default'].div(templateObject_2$c || (templateObject_2$c = __makeTemplateObject(["\n    position: absolute;\n    top: 15px;\n    left: 9px;\n"], ["\n    position: absolute;\n    top: 15px;\n    left: 9px;\n"])));
+var WrapIconSub = styled__default['default'].div(templateObject_2$c || (templateObject_2$c = __makeTemplateObject(["\n    position: absolute;\n    top: 16px;\n    left: 9px;\n"], ["\n    position: absolute;\n    top: 16px;\n    left: 9px;\n"])));
 var PanelBody = function (_a) {
     var isPushed = _a.isPushed, pushNav = _a.pushNav, isMobile = _a.isMobile, links = _a.links;
     var location = reactRouterDom.useLocation();
@@ -2283,7 +2283,7 @@ var PanelBody = function (_a) {
                         React__default['default'].createElement(MenuLink, { href: item.href, onClick: handleClick }, item.label) :
                         (item.href.indexOf('https://midasgold.network') !== -1) ? React__default['default'].createElement(React__default['default'].Fragment, null,
                             item.logo && IconSub && React__default['default'].createElement(WrapIconSub, null,
-                                React__default['default'].createElement(IconSub, { width: "20px", height: "15px", mr: "8px" })),
+                                React__default['default'].createElement(IconSub, { width: "26px", height: "20px", mr: "8px" })),
                             React__default['default'].createElement(MenuLink, { href: item.href }, item.label)) :
                             React__default['default'].createElement(MenuLink, { href: item.href, target: "_blank" }, item.label)));
                 })));
