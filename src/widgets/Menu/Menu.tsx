@@ -60,7 +60,7 @@ const MobileOnlyOverlay = styled(Overlay)`
 
 const FlexCustom = styled(Flex)`
     position: absolute;
-    right: 250px;
+    right: 50px;
     border-right: 1px solid rgba(255, 255, 255, 0.4);
     a{
       padding: 6px 20px;
@@ -77,7 +77,8 @@ const FlexCustom = styled(Flex)`
 
 const FlexCustom1 = styled(Flex)`
     position: absolute;
-    right: 350px;
+    right: 50px;
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
     a{
       padding: 6px 20px;
       margin: 0px auto;
@@ -109,7 +110,7 @@ position: absolute;
 
 const FlexCustom3 = styled(Flex)`
     position: absolute;
-    right: 450px;
+    right: 250px;
     a{
       padding: 6px 20px;
       margin: 0px auto;
@@ -125,7 +126,7 @@ const FlexCustom3 = styled(Flex)`
 
 const FlexCustom4 = styled(Flex)`
     position: absolute;
-    right: 550px;
+    right: 350px;
     a{
       padding: 6px 20px;
       margin: 0px auto;
@@ -141,7 +142,7 @@ const FlexCustom4 = styled(Flex)`
 
 const FlexCustom5 = styled(Flex)`
     position: absolute;
-    right: 650px;
+    right: 450px;
     a{
       padding: 6px 20px;
       margin: 0px auto;
@@ -157,7 +158,23 @@ const FlexCustom5 = styled(Flex)`
 
 const FlexCustom6 = styled(Flex)`
     position: absolute;
-    right: 750px;
+    right: 550px;
+    a{
+      padding: 6px 20px;
+      margin: 0px auto;
+      color: #fff;
+      font-weight: 700;
+      border-radius: 20px;
+      font-size: 14px;
+      @media screen and (max-width: 500px){
+        display: none;
+      }
+    }
+`
+
+const FlexCustom7 = styled(Flex)`
+    position: absolute;
+    right: 650px;
     a{
       padding: 6px 20px;
       margin: 0px auto;
@@ -235,6 +252,10 @@ const Menu: React.FC<NavProps> = ({
           href={homeLink?.href ?? "/"}
         />
 
+        <FlexCustom7>
+          <a href="https://bsc.valuedefi.io/#/vswap?outputCurrency=0xC8bA297F22392A98a7f203D6fA40A56341C40CEB&inputCurrency=bnb" target="_blank">Buy MDG6</a>
+        </FlexCustom7>
+
         <FlexCustom6>
           <a href="https://bsc.valuedefi.io/#/vswap?outputCurrency=0x95c405e847f2899e3742658017e18ba1c07521a5&inputCurrency=bnb" target="_blank">Buy MDG5</a>
         </FlexCustom6>
@@ -247,19 +268,21 @@ const Menu: React.FC<NavProps> = ({
           <a href="https://bsc.valuedefi.io/#/vswap?outputCurrency=0x5e8499d884b3086d0fc0c21423fc427e31b7382c&inputCurrency=bnb" target="_blank">Buy MDG3</a>
         </FlexCustom4>
 
-        <FlexCustom2>
-          <a href="https://midasdollar.fi" target="_blank">Mi-Dollar</a>
-        </FlexCustom2>
-        <FlexCustom>
-          <a href="https://bsc.valuedefi.io/#/vswap?inputCurrency=bnb&outputCurrency=0x35e869B7456462b81cdB5e6e42434bD27f3F788c" target="_blank">Buy MDO</a>
-        </FlexCustom>
-        <FlexCustom1>
-          <a href="https://bsc.valuedefi.io/#/vswap?inputCurrency=bnb&outputCurrency=0xc1edcc306e6faab9da629efca48670be4678779d" target="_blank">Buy MDG</a>
-        </FlexCustom1>
-
         <FlexCustom3>
           <a href="https://bsc.valuedefi.io/#/vswap?outputCurrency=0x075ffce0f10428c4d929032b37597b24f2a3ed51&inputCurrency=bnb" target="_blank">Buy MDG2</a>
         </FlexCustom3>
+
+        <FlexCustom2>
+          <a href="https://bsc.valuedefi.io/#/vswap?inputCurrency=bnb&outputCurrency=0xc1edcc306e6faab9da629efca48670be4678779d" target="_blank">Buy MDG</a>
+        </FlexCustom2>
+
+        <FlexCustom1>
+          <a href="https://midasdollar.fi" target="_blank">Mi-Dollar</a>
+        </FlexCustom1>
+
+        {/* <FlexCustom> */}
+        {/*  <a href="https://bsc.valuedefi.io/#/vswap?inputCurrency=bnb&outputCurrency=0x35e869B7456462b81cdB5e6e42434bD27f3F788c" target="_blank">Buy MDO</a> */}
+        {/* </FlexCustom> */}
 
         <Flex>
           <UserBlock account={account} login={login} logout={logout} />
