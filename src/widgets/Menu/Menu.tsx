@@ -77,8 +77,7 @@ const FlexCustom = styled(Flex)`
 
 const FlexCustom1 = styled(Flex)`
     position: absolute;
-    right: 50px;
-    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    right: 150px;
     a{
       padding: 6px 20px;
       margin: 0px auto;
@@ -94,7 +93,8 @@ const FlexCustom1 = styled(Flex)`
 
 const FlexCustom2 = styled(Flex)`
 position: absolute;
-    right: 150px;
+    right: 250px;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
     a{
       padding: 6px 20px;
       margin: 0px auto;
@@ -110,7 +110,7 @@ position: absolute;
 
 const FlexCustom3 = styled(Flex)`
     position: absolute;
-    right: 250px;
+    right: 350px;
     a{
       padding: 6px 20px;
       margin: 0px auto;
@@ -126,7 +126,7 @@ const FlexCustom3 = styled(Flex)`
 
 const FlexCustom4 = styled(Flex)`
     position: absolute;
-    right: 350px;
+    right: 450px;
     a{
       padding: 6px 20px;
       margin: 0px auto;
@@ -142,7 +142,7 @@ const FlexCustom4 = styled(Flex)`
 
 const FlexCustom5 = styled(Flex)`
     position: absolute;
-    right: 450px;
+    right: 550px;
     a{
       padding: 6px 20px;
       margin: 0px auto;
@@ -158,7 +158,7 @@ const FlexCustom5 = styled(Flex)`
 
 const FlexCustom6 = styled(Flex)`
     position: absolute;
-    right: 550px;
+    right: 650px;
     a{
       padding: 6px 20px;
       margin: 0px auto;
@@ -174,7 +174,7 @@ const FlexCustom6 = styled(Flex)`
 
 const FlexCustom7 = styled(Flex)`
     position: absolute;
-    right: 650px;
+    right: 750px;
     a{
       padding: 6px 20px;
       margin: 0px auto;
