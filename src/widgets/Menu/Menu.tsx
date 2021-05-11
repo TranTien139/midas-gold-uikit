@@ -253,7 +253,7 @@ const Menu: React.FC<NavProps> = ({
         />
 
         <FlexCustom7>
-          <a href="https://bsc.valuedefi.io/#/vswap?outputCurrency=0xC8bA297F22392A98a7f203D6fA40A56341C40CEB&inputCurrency=bnb" target="_blank">Buy MDG6</a>
+          <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xC8bA297F22392A98a7f203D6fA40A56341C40CEB&inputCurrency=bnb" target="_blank">Buy MDG6</a>
         </FlexCustom7>
 
         <FlexCustom6>
