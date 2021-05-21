@@ -2691,7 +2691,7 @@ var Menu = function (_a) {
         React.createElement(StyledNav, { showMenu: showMenu },
             React.createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
             React.createElement(FlexCustom3, null,
-                React.createElement("a", { href: "https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xC8bA297F22392A98a7f203D6fA40A56341C40CEB", target: "_blank" }, "Buy MDG6")),
+                React.createElement("a", { href: "https://www.bdex.fi/#/swap?outputCurrency=0xC8bA297F22392A98a7f203D6fA40A56341C40CEB", target: "_blank" }, "Buy MDG6")),
             React.createElement(FlexCustom2, null,
                 React.createElement("a", { href: "https://www.bdex.fi/#/swap?outputCurrency=0xc1edcc306e6faab9da629efca48670be4678779d", target: "_blank" }, "Buy MDG")),
             React.createElement(FlexCustom1, null,
