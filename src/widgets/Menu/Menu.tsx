@@ -252,28 +252,13 @@ const Menu: React.FC<NavProps> = ({
           href={homeLink?.href ?? "/"}
         />
 
-        <FlexCustom7>
-          <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xC8bA297F22392A98a7f203D6fA40A56341C40CEB&inputCurrency=bnb" target="_blank">Buy MDG6</a>
-        </FlexCustom7>
-
-        <FlexCustom6>
-          <a href="https://bsc.valuedefi.io/#/vswap?outputCurrency=0x95c405e847f2899e3742658017e18ba1c07521a5&inputCurrency=bnb" target="_blank">Buy MDG5</a>
-        </FlexCustom6>
-
-        <FlexCustom5>
-          <a href="https://bsc.valuedefi.io/#/vswap?outputCurrency=0x7c9Cb83c0e47D01Bb27EE14337EE9eB493E770A7&inputCurrency=bnb" target="_blank">Buy MDG4</a>
-        </FlexCustom5>
-
-        <FlexCustom4>
-          <a href="https://bsc.valuedefi.io/#/vswap?outputCurrency=0x5e8499d884b3086d0fc0c21423fc427e31b7382c&inputCurrency=bnb" target="_blank">Buy MDG3</a>
-        </FlexCustom4>
 
         <FlexCustom3>
-          <a href="https://bsc.valuedefi.io/#/vswap?outputCurrency=0x075ffce0f10428c4d929032b37597b24f2a3ed51&inputCurrency=bnb" target="_blank">Buy MDG2</a>
+          <a href="https://www.bdex.fi/#/swap?outputCurrency=0xC8bA297F22392A98a7f203D6fA40A56341C40CEB" target="_blank">Buy MDG6</a>
         </FlexCustom3>
 
         <FlexCustom2>
-          <a href="https://bsc.valuedefi.io/#/vswap?inputCurrency=bnb&outputCurrency=0xc1edcc306e6faab9da629efca48670be4678779d" target="_blank">Buy MDG</a>
+          <a href="https://www.bdex.fi/#/swap?outputCurrency=0xc1edcc306e6faab9da629efca48670be4678779d" target="_blank">Buy MDG</a>
         </FlexCustom2>
 
         <FlexCustom1>
