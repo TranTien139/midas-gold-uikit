@@ -2274,7 +2274,10 @@ var PanelBody = function (_a) {
                         (item.href.indexOf('https://midasgold.network') !== -1) ? React.createElement(React.Fragment, null,
                             item.logo && IconSub && React.createElement(WrapIconSub, null,
                                 React.createElement(IconSub, { width: "26px", height: "20px", mr: "8px" })),
-                            React.createElement(MenuLink, { href: item.href }, item.label)) :
+                            React.createElement(MenuLink, { href: item.href },
+                                item.label,
+                                " ",
+                                item.numberPool ? React.createElement("span", { style: { color: 'red', fontStyle: 'italic' } }, item.numberPool) : null)) :
                             React.createElement(MenuLink, { href: item.href, target: "_blank" },
                                 item.label,
                                 " ",
@@ -2296,7 +2299,10 @@ var PanelBody = function (_a) {
                         entry.label,
                         " ",
                         entry.numberPool ? React.createElement("span", { style: { color: 'red', fontStyle: 'italic' } }, entry.numberPool) : null) :
-                    (entry.href && entry.href.indexOf('https://midasgold.network') !== -1) ? React.createElement("a", { href: entry.href }, entry.label) :
+                    (entry.href && entry.href.indexOf('https://midasgold.network') !== -1) ? React.createElement("a", { href: entry.href },
+                        entry.label,
+                        " ",
+                        entry.numberPool ? React.createElement("span", { style: { color: 'red', fontStyle: 'italic' } }, entry.numberPool) : null) :
                         React.createElement("a", { href: entry.href, target: "_blank" }, entry.label))));
     })));
 };

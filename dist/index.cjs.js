@@ -2287,7 +2287,10 @@ var PanelBody = function (_a) {
                         (item.href.indexOf('https://midasgold.network') !== -1) ? React__default['default'].createElement(React__default['default'].Fragment, null,
                             item.logo && IconSub && React__default['default'].createElement(WrapIconSub, null,
                                 React__default['default'].createElement(IconSub, { width: "26px", height: "20px", mr: "8px" })),
-                            React__default['default'].createElement(MenuLink, { href: item.href }, item.label)) :
+                            React__default['default'].createElement(MenuLink, { href: item.href },
+                                item.label,
+                                " ",
+                                item.numberPool ? React__default['default'].createElement("span", { style: { color: 'red', fontStyle: 'italic' } }, item.numberPool) : null)) :
                             React__default['default'].createElement(MenuLink, { href: item.href, target: "_blank" },
                                 item.label,
                                 " ",
@@ -2309,7 +2312,10 @@ var PanelBody = function (_a) {
                         entry.label,
                         " ",
                         entry.numberPool ? React__default['default'].createElement("span", { style: { color: 'red', fontStyle: 'italic' } }, entry.numberPool) : null) :
-                    (entry.href && entry.href.indexOf('https://midasgold.network') !== -1) ? React__default['default'].createElement("a", { href: entry.href }, entry.label) :
+                    (entry.href && entry.href.indexOf('https://midasgold.network') !== -1) ? React__default['default'].createElement("a", { href: entry.href },
+                        entry.label,
+                        " ",
+                        entry.numberPool ? React__default['default'].createElement("span", { style: { color: 'red', fontStyle: 'italic' } }, entry.numberPool) : null) :
                         React__default['default'].createElement("a", { href: entry.href, target: "_blank" }, entry.label))));
     })));
 };
