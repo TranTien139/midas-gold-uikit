@@ -7,6 +7,7 @@ import Accordion from "./Accordion";
 import { MenuEntry, LinkLabel } from "./MenuEntry";
 import MenuLink from "./MenuLink";
 import { PanelProps, PushedProps } from "./types";
+import { color } from "styled-system";
 
 interface Props extends PanelProps, PushedProps {
   isMobile: boolean;
@@ -57,9 +58,9 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
                   const IconSub = item.logo ? Icons[item.logo] : null;
                   return (<MenuEntry key={item.href} secondary isActive={location.pathname !== "/" ? item.href.indexOf(location.pathname) !== -1 : item.href === location.pathname} style={{ position: 'relative' }}>
                     { (item.href.indexOf('https://') === -1) ?
-                      <MenuLink href={item.href} onClick={handleClick}>{item.label}</MenuLink>:
+                      <MenuLink href={item.href} onClick={handleClick}>{item.label} { item.numberPool ? <span style={{color: 'red', fontStyle: 'italic' }}>{item.numberPool}</span> : null }</MenuLink>:
                       (item.href.indexOf('https://midasgold.network') !== -1)  ? <>{item.logo && IconSub && <WrapIconSub><IconSub width="26px" height="20px" mr="8px" /></WrapIconSub> }<MenuLink href={item.href} >{item.label}</MenuLink></> :
-                        <MenuLink href={item.href} target="_blank">{item.label}</MenuLink>
+                        <MenuLink href={item.href} target="_blank">{item.label} { item.numberPool ? <span style={{color: 'red', fontStyle: 'italic' }}>{item.numberPool}</span> : null } </MenuLink>
                     }
                   </MenuEntry>
                 )})}
@@ -79,7 +80,7 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
             <MenuLink href={newHref} onClick={handleClick} >
               {iconElement}
               { (entry.href && entry.href.indexOf('https://') === -1) ?
-                <LinkLabel isPushed={isPushed}>{entry.label}</LinkLabel> :
+                <LinkLabel isPushed={isPushed}>{entry.label} { entry.numberPool ? <span style={{color: 'red', fontStyle: 'italic' }}>{entry.numberPool}</span> : null }</LinkLabel> :
                 (entry.href && entry.href.indexOf('https://midasgold.network') !== -1)  ? <a href={entry.href} >{entry.label}</a> :
                   <a href={entry.href} target="_blank">{entry.label}</a>
               }

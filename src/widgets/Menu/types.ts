@@ -24,6 +24,7 @@ export interface NavTheme {
 }
 
 export interface MenuSubEntry {
+  numberPool?: any;
   icon?: JSX.Element;
   label: string;
   href: string;
@@ -32,6 +33,7 @@ export interface MenuSubEntry {
 }
 
 export interface MenuEntry {
+  numberPool?: any;
   label: string;
   icon: string;
   items?: MenuSubEntry[];
@@ -49,6 +51,7 @@ export interface PanelProps {
   setLang: (lang: LangType) => void;
   links: Array<MenuEntry>;
   priceLink: string;
+  numberPool?: any;
 }
 
 export interface NavProps extends PanelProps {
