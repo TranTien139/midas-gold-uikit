@@ -2280,12 +2280,19 @@ var PanelBody = function (_a) {
                 entry.items.map(function (item) {
                     var IconSub = item.logo ? Icons[item.logo] : null;
                     return (React__default['default'].createElement(MenuEntry, { key: item.href, secondary: true, isActive: location.pathname !== "/" ? item.href.indexOf(location.pathname) !== -1 : item.href === location.pathname, style: { position: 'relative' } }, (item.href.indexOf('https://') === -1) ?
-                        React__default['default'].createElement(MenuLink, { href: item.href, onClick: handleClick }, item.label) :
+                        React__default['default'].createElement(MenuLink, { href: item.href, onClick: handleClick },
+                            item.label,
+                            " ",
+                            item.numberPool ? React__default['default'].createElement("span", { style: { color: 'red', fontStyle: 'italic' } }, item.numberPool) : null) :
                         (item.href.indexOf('https://midasgold.network') !== -1) ? React__default['default'].createElement(React__default['default'].Fragment, null,
                             item.logo && IconSub && React__default['default'].createElement(WrapIconSub, null,
                                 React__default['default'].createElement(IconSub, { width: "26px", height: "20px", mr: "8px" })),
                             React__default['default'].createElement(MenuLink, { href: item.href }, item.label)) :
-                            React__default['default'].createElement(MenuLink, { href: item.href, target: "_blank" }, item.label)));
+                            React__default['default'].createElement(MenuLink, { href: item.href, target: "_blank" },
+                                item.label,
+                                " ",
+                                item.numberPool ? React__default['default'].createElement("span", { style: { color: 'red', fontStyle: 'italic' } }, item.numberPool) : null,
+                                " ")));
                 })));
         }
         var isActive = entry.href !== "/" ? location.pathname.includes(entry.href) : entry.href === location.pathname;
@@ -2298,7 +2305,10 @@ var PanelBody = function (_a) {
             React__default['default'].createElement(MenuLink, { href: newHref, onClick: handleClick },
                 iconElement,
                 (entry.href && entry.href.indexOf('https://') === -1) ?
-                    React__default['default'].createElement(LinkLabel, { isPushed: isPushed }, entry.label) :
+                    React__default['default'].createElement(LinkLabel, { isPushed: isPushed },
+                        entry.label,
+                        " ",
+                        entry.numberPool ? React__default['default'].createElement("span", { style: { color: 'red', fontStyle: 'italic' } }, entry.numberPool) : null) :
                     (entry.href && entry.href.indexOf('https://midasgold.network') !== -1) ? React__default['default'].createElement("a", { href: entry.href }, entry.label) :
                         React__default['default'].createElement("a", { href: entry.href, target: "_blank" }, entry.label))));
     })));
