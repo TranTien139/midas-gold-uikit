@@ -253,9 +253,9 @@ const Menu: React.FC<NavProps> = ({
         />
 
 
-        <FlexCustom3>
-          <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xC8bA297F22392A98a7f203D6fA40A56341C40CEB" target="_blank">Buy MDG6</a>
-        </FlexCustom3>
+        {/* <FlexCustom3> */}
+        {/*  <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xC8bA297F22392A98a7f203D6fA40A56341C40CEB" target="_blank">Buy MDG6</a> */}
+        {/* </FlexCustom3> */}
 
         <FlexCustom2>
           <a href="https://www.bdex.fi/#/swap?outputCurrency=0xc1edcc306e6faab9da629efca48670be4678779d" target="_blank">Buy MDG</a>
